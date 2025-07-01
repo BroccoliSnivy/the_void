@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>the void</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="hacker">
+  <!-- particles.js background container -->
+  <div id="particles-js"></div>
 
   <!-- Mode Toggle -->
   <button id="modeToggle">Switch to Professional Mode</button>
@@ -20,7 +23,6 @@
       <div id="terminalText"></div>
     </div>
   </div>
-  
 
   <!-- Logs / Projects -->
   <p>// <span data-hacker="this site is under surveillance." data-professional="This website is under development.">this site is under surveillance.</span></p>
@@ -29,6 +31,10 @@
   <!-- Contact -->
   <p>// <a href="mailto:you@protonmail.com" data-hacker="transmit signal" data-professional="Contact Me">transmit signal</a></p>
 
+  <!-- Scripts -->
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
