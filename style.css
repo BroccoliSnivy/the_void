@@ -1,0 +1,115 @@
+/* === IMPORT FONT === */
+@font-face {
+    font-family: 'HackerFont';
+    src: url('fonts/sharetech.ttf') format('truetype');
+  }
+  
+  /* === BASE BODY === */
+  body {
+    margin: 0;
+    padding: 40px;
+    transition: background 0.5s, color 0.5s, font-family 0.5s;
+  }
+  
+  /* --- HACKER MODE --- */
+  body.hacker {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'HackerFont', monospace;
+  }
+  
+  body.hacker h1 {
+    text-shadow: 0 0 5px #00ff00;
+  }
+  
+  /* --- PROFESSIONAL MODE --- */
+  body.professional {
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body.professional h1 {
+    text-shadow: none;
+  }
+  
+  /* === OTHER ELEMENTS === */
+  .cursor {
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  #modeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: inherit;
+    border: 1px solid currentColor;
+    padding: 8px 12px;
+    font-family: inherit;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  h1, p {
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+
+  /*--Terminal Box styling--*/
+  #terminalBox {
+    background-color: #111;
+    color: #00ff00;
+    font-family: 'HackerFont', monospace;
+    font-size: 10px;
+    line-height: 1.4;
+    padding-left: 5px;
+    border: 2px solid #00ff00;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    position: relative;
+    margin-top: 0px;
+  }
+  
+  #terminalTextContainer {
+    white-space: pre-wrap;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 10px;               
+    height: 1em;               
+    animation: blink 1s steps(2, start) infinite;
+    background-color: #00ff00; 
+    color: black;              
+  }
+  
+  
+  .prompt {
+    color: #00bfff;
+  }
+  
+  .command {
+    color: #ffffff;
+  }
+  
+  .output {
+    color: #9acd32;
+  }
+  
+  /* terminal host name color changes */
+  .hostname {
+    color: red;
+  }
