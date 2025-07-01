@@ -3,6 +3,27 @@
     font-family: 'HackerFont';
     src: url('fonts/sharetech.ttf') format('truetype');
   }
+
+/* == phone compatibility == */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  #terminalBox {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  #modeToggle {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
   
   /* === BASE BODY === */
   body {
