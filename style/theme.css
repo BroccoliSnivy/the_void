@@ -1,0 +1,23 @@
+body {
+    padding: 40px;
+    transition: background 0.5s, color 0.5s, font-family 0.5s;
+  }
+  
+  body.hacker {
+    background: rgb(0, 0, 0);
+    color: #00ff00;
+  }
+  
+  body.hacker h1 {
+    text-shadow: 0 0 5px #00ff00;
+  }
+  
+  body.professional {
+    background-color: #3a3a3a;
+    color: #eaeaea;
+  }
+  
+  body.professional h1 {
+    text-shadow: none;
+  }
+  
