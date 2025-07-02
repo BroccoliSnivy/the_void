@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>the void</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/components.css">
+  <link rel="stylesheet" href="style/terminal.css">
+  <link rel="stylesheet" href="style/theme.css">
+  <link rel="stylesheet" href="style/layout.css">
+
+  <!-- Scripts (deferred for loading AFTER HTML is parsed) -->
+  <script src="scripts/particles/particles.js" defer></script>
+  <script src="scripts/particles/app.js" defer></script>
+  <script src="scripts/terminal/terminal.js" defer></script>
+  <script src="scripts/modetoggle/modetoggle.js" defer></script>
+</head>
+
+<body class="hacker">
+  <div id="particles-js"></div>
+
+  <div class="layout">
+    <!-- Optional Left Decor -->
+    <div class="left-decor">
+      <!-- Your terminal or glitchy text -->
+    </div>
+
+
+    <header class="hero-heading">
+      <h1>>_ <span data-hacker="welcome to my corner of the net" data-professional="Welcome to My Website">welcome to my corner of the net</span> <span class="cursor">█</span></h1>
+    </header>
+
+    <!-- Main Focused Rectangle -->
+    <div class="main-container">
+      <!-- Mode toggle, header, terminal box, info block -->
+      <!-- <button id="modeToggle">Switch to Professional Mode</button> -->
+
+
+      <!-- <div id="terminalBox">
+        <div id="terminalTextContainer">
+          <div id="terminalText"></div>
+        </div>
+      </div> -->
+      <div class="about-section">
+
+        <div class="ascii-wraper">
+          <pre class="ascii-art">
+██╗  ██╗███████╗██╗     ██╗      ██████╗     ██╗   ██╗██╗███████╗██╗████████╗ ██████╗ ██████╗ ███████╗
+██║  ██║██╔════╝██║     ██║     ██╔═══██╗    ██║   ██║██║██╔════╝██║╚══██╔══╝██╔═══██╗██╔══██╗██╔════╝
+███████║█████╗  ██║     ██║     ██║   ██║    ██║   ██║██║███████╗██║   ██║   ██║   ██║██████╔╝███████╗
+██╔══██║██╔══╝  ██║     ██║     ██║   ██║    ╚██╗ ██╔╝██║╚════██║██║   ██║   ██║   ██║██╔══██╗╚════██║
+██║  ██║███████╗███████╗███████╗╚██████╔╝     ╚████╔╝ ██║███████║██║   ██║   ╚██████╔╝██║  ██║███████║
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝       ╚═══╝  ╚═╝╚══════╝╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝
+          </pre>
+        </div>
+
+        <!-- First block -->
+        <div class="about-block">
+          <img src="assets/images/cybercity.gif" alt="Image 1">
+          <div class="text">
+            <h2>First Chatper</h2>
+            <p>Hi!! My name is <b>GlitchGhost</b> I’m not your typical developer.
+              I didn’t get here through perfect grades, elite classes, or by ticking the "right" boxes.
+              I got here through obsession, through breaking things, fixing them, and breaking them again — all just to understand how they work under the hood.
+              
+              While others saw code as a career path, I saw it as freedom.
+              I taught myself how to code, hack, build, and rebuild — not because I had to, but because I couldn’t not do it. The deeper I went, the more curious I became.
+              </p>
+          </div>
+        </div>
+
+        <!-- Second block -->
+        <div class="about-block reverse">
+          <img src="assets/images/cyber2.gif" alt="Image 2">
+          <div class="text">
+            <h2>Second Chatper</h2>
+            <p>Most people stop when they hit an error.
+              I go further. I want to know why something broke.
+              That’s where the real knowledge begins.
+              
+              Everything I build is meant to feel alive, a little personal, a little unpredictable — because I believe tech should reflect the person who creates it.
+              
+              This site is my personal playground.
+              A place to experiment, to share, to showcase who I really am — not polished for corporate approval, but real, raw, and evolving.
+          </div>
+        </div>
+    
+      </div>
+
+      <div class="info-block">
+        <p>// <span data-hacker="this site is under surveillance." data-professional="This website is under development.">this site is under surveillance.</span></p>
+        <p>// <a href="/projects" data-hacker="artifacts" data-professional="Projects">artifacts</a></p>
+        <p>// <a href="mailto:you@protonmail.com" data-hacker="transmit signal" data-professional="Contact Me">transmit signal</a></p>
+      </div>
+    </div>
+
+    <!-- Optional Right Decor -->
+    <div class="right-decor"></div>
+  </div>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+
+
+</html>
