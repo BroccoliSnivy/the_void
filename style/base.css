@@ -8,11 +8,11 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-    img[src="assets/images/tree_layouts_nav.png"] {
-      max-width: 100%;
-      height: auto;
-    }
+  
+  img[src="assets/images/tree_layouts_nav.png"] {
+    max-width: 100%;
+    height: auto;
+  }
 
   
   html, body {
@@ -24,5 +24,4 @@
     z-index: 1;
     background: transparent;
     cursor: url('../assets/cursor/cursor.png'), auto;
-
   }
