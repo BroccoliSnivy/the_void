@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>the void</title>
+  <link rel="icon" href="favicon_v2.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/components.css">
+  <link rel="stylesheet" href="style/terminal.css">
+  <link rel="stylesheet" href="style/theme.css">
+  <link rel="stylesheet" href="style/layout.css">
+  <link rel="stylesheet" href="style/sphere/sphere.css">
+
+  <!-- ARt gallery specific style sheet imports  -->
+   <link rel="stylesheet" href="style/artwork.css">
+
+  <!-- Scripts (deferred for loading AFTER HTML is parsed) -->
+  <script src="scripts/particles/particles.js" defer></script>
+  <script src="scripts/particles/app.js" defer></script>
+  <script src="scripts/terminal/terminal.js" defer></script>
+  <script src="scripts/modetoggle/modetoggle.js" defer></script>
+</head>
+
+<body class="hacker">
+  <div id="particles-js"></div>
+
+  <!-- Art Gallery Grid Section -->
+    <div class="art-gallery-grid">
+        <div class="art-card">
+            <img src="art_gallery/badri.png" alt="Artwork 1" class="zoomable-art">
+            <div class="art-title">Badri The Cat</div>
+        </div>
+          
+
+        <img
+            src="images/art1.jpg"
+            alt="New Arts coming soon 😉"
+            class="zoomable-art"
+            onerror="this.outerHTML = `<div class='zoomable-art fallback'>${this.alt}</div>`"
+        />
+
+
+        <!-- <div class="art-card">
+        <img src="assets/images/art3.jpg" alt="Artwork 3" class="zoomable-art">
+        <a href="assets/pdfs/art3.pdf" download>Download PDF</a>
+        </div> -->
+
+        <!-- Add more art-card blocks as needed -->
+
+    </div>
+  <script type="module" src="scripts/main.js"></script>
+
+  <!-- Art gallery script imports -->
+  <script src="scripts/art_gallery/artgal.js"></script>
+
+</body>
+
+</html>

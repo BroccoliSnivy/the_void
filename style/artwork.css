@@ -1,0 +1,139 @@
+/* === Art Gallery Grid === */
+.art-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  
+  .art-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .art-card img {
+    width: 100%;
+    height: auto;                /* Natural height scaling */
+    border-radius: 6px;
+    cursor: zoom-in;
+    transition: 0.3s ease-in-out;
+  }
+  
+  
+  .art-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00ff8c;
+    text-decoration: underline;
+    font-size: 0.9rem;
+  }
+
+  .art-title {
+    margin-top: 10px;
+    color: #00ff8c;
+    font-family: monospace;
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  
+  /* === Fullscreen Overlay Zoom === */
+  .image-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-overlay .zoomed-fallback {
+    color: #00ff8c;
+    font-family: monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 80vw;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: rgba(26, 26, 26, 0.9);
+    box-shadow: 0 0 20px #00ff8c50;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-overlay.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .image-overlay.show .zoomed-fallback {
+    transform: scale(1);
+  }
+  
+  .image-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ff8c70;
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
+  }
+  
+  .image-overlay.show img {
+    transform: scale(1);
+  }
+
+  .zoomable-art {
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    cursor: zoom-in;
+  }
+  
+  /* This replaces the image with text if image fails */
+  .zoomable-art.fallback {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #00ff8c;
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    border-radius: 6px;
+    cursor: default;
+  }
+  .zoomed-fallback {
+    color: #00cfff;
+    font-family: monospace;
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 80vw;
+    padding: 0 20px;
+  
+    background: none;       
+    border: none;             
+    box-shadow: none;         
+  
+    text-shadow: 0 0 12px #00cfff80, 0 0 20px #00cfff40; /* 🔵 blue glow */
+  
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  } 

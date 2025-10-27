@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>the void</title>
+  <link rel="icon" href="favicon_v2.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/components.css">
+  <link rel="stylesheet" href="style/terminal.css">
+  <link rel="stylesheet" href="style/theme.css">
+  <link rel="stylesheet" href="style/layout.css">
+  <link rel="stylesheet" href="style/sphere/sphere.css">
+
+  <!-- Scripts (deferred for loading AFTER HTML is parsed) -->
+  <script src="scripts/particles/particles.js" defer></script>
+  <script src="scripts/particles/app.js" defer></script>
+  <script src="scripts/terminal/terminal.js" defer></script>
+  <script src="scripts/modetoggle/modetoggle.js" defer></script>
+  <script src="scripts/typewriter/typewriter.js" defer> </script>
+</head>
+
+<body class="hacker">
+  <div id="particles-js"></div>
+
+  <div class="layout">
+    <!-- Optional Left Decor -->
+    <div class="left-decor">
+      <!-- Your terminal or glitchy text -->
+    </div>
+
+
+    <header class="hero-heading">
+      <h1>>_ <span data-hacker="welcome to my corner of the net" data-professional="Welcome to My Website">welcome to my corner of the internet</span> <span class="cursor">█</span></h1>
+    </header>
+
+    <div></div>
+
+
+    <!-- Main Focused Rectangle -->
+    <div class="main-container">
+      <!-- Mode toggle, header, terminal box, info block -->
+      <!-- <button id="modeToggle">Switch to Professional Mode</button> -->
+
+
+      <!-- <div id="terminalBox">
+        <div id="terminalTextContainer">
+          <div id="terminalText"></div>
+        </div>
+      </div> -->
+      <div class="about-section">
+
+        <div class="ascii-wraper">
+          <div class="ascii-track">
+            <pre class="ascii-art">
+  ██╗  ██╗███████╗██╗     ██╗      ██████╗     ██╗   ██╗██╗███████╗██╗████████╗ ██████╗ ██████╗ ███████╗
+  ██║  ██║██╔════╝██║     ██║     ██╔═══██╗    ██║   ██║██║██╔════╝██║╚══██╔══╝██╔═══██╗██╔══██╗██╔════╝
+  ███████║█████╗  ██║     ██║     ██║   ██║    ██║   ██║██║███████╗██║   ██║   ██║   ██║██████╔╝███████╗
+  ██╔══██║██╔══╝  ██║     ██║     ██║   ██║    ╚██╗ ██╔╝██║╚════██║██║   ██║   ██║   ██║██╔══██╗╚════██║
+  ██║  ██║███████╗███████╗███████╗╚██████╔╝     ╚████╔╝ ██║███████║██║   ██║   ╚██████╔╝██║  ██║███████║
+  ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝       ╚═══╝  ╚═╝╚══════╝╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝
+            </pre>
+            <pre class="ascii-block">&nbsp;</pre>
+          </div>
+        </div>
+
+        <!-- stylish lines  -->
+        <div id="typewriter">
+          <span class="static-text">I am&nbsp;</span><span class="dynamic-text"></span>
+        </div>
+        
+        
+
+        <ul class="about-bullets">
+          <li>💻 Hacker by curiosity</li>
+          <li>🧠 Thinks a lot more than talks</li>
+          <li>🎨 Breaks pixels for fun sometimes</li>
+          <li>🎮 Gamer by birth</li>
+        </ul>
+
+
+
+        <!-- First block -->
+        <!-- <div class="about-block">
+          <img src="assets/images/cybercity.gif" alt="Image 1">
+          <div class="text">
+            <h2>First Chatper</h2>
+            <p>Hi!! My name is <b>GlitchGhost</b> I’m not your typical developer.
+              I didn’t get here through perfect grades, elite classes, or by ticking the "right" boxes.
+              I got here through obsession, through breaking things, fixing them, and breaking them again — all just to understand how they work under the hood.
+              
+              While others saw code as a career path, I saw it as freedom.
+              I taught myself how to code, hack, build, and rebuild — not because I had to, but because I couldn’t not do it. The deeper I went, the more curious I became.
+              </p>
+          </div>
+        </div> -->
+
+        <!-- Second block -->
+        <!-- <div class="about-block reverse">
+          <img src="assets/images/cyber2.gif" alt="Image 2">
+          <div class="text">
+            <h2>Second Chatper</h2>
+            <p>Most people stop when they hit an error.
+              I go further. I want to know why something broke.
+              That’s where the real knowledge begins.
+              
+              Everything I build is meant to feel alive, a little personal, a little unpredictable — because I believe tech should reflect the person who creates it.
+              
+              This site is my personal playground.
+              A place to experiment, to share, to showcase who I really am — not polished for corporate approval, but real, raw, and evolving.
+          </div>
+        </div> -->
+    
+      </div>
+      
+
+      <div class="info-block">
+        <p>// <span data-hacker="this site is under surveillance." data-professional="This website is under development.">this site is under surveillance.</span></p>
+        <p>// <a href="/projects" data-hacker="artifacts" data-professional="Projects">artifacts</a></p>
+        <p>// <a href="mailto:you@protonmail.com" data-hacker="transmit signal" data-professional="Contact Me">transmit signal</a></p>
+      </div>
+    </div>
+
+    <div>
+      <!-- Image Map Generated by http://www.image-map.net/ -->
+      <img src="assets/images/tree_layouts_nav.png" usemap="#image-map">
+
+      <map name="image-map">
+          <area target="_self" alt="Art_gallary" title="About Me" href="about.html" coords="637,671,587,631" shape="rect">
+          <area target="_self" alt="Project Gallary" title="Project Gallary" href="project_gallery.html" coords="776,377,713,330" shape="rect">
+          <area target="_self" alt="Blog" title="Blog" href="blog.html" coords="1065,512,971,434" shape="rect">
+          <area target="_self" alt="ARt_gallary" title="ARt_gallary" href="art-gallery.html" coords="1059,589,1134,622" shape="rect">
+          <area target="_self" alt="___" title="Looks like you are about to find a secret page" href="youtube.html" coords="698,552,715,530" shape="rect">
+          <area target="_self" alt="home" title="home" href="index.html" coords="840,790,912,812" shape="rect">
+      </map>
+      
+    </div>
+
+    <!-- Optional Right Decor -->
+    <div class="right-decor"></div>
+  </div>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+
+<footer class="footer">
+  <p>Built & designed by <strong>BroccoliSnivy (Spandan Chavan)</strong></p>
+  <p><a href="businesschavan2004@gmail.com">reach out →</a></p>
+</footer>
+
+
+</html>

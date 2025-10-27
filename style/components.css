@@ -1,0 +1,54 @@
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1em;
+    background-color: #00ff00;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  #modeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: inherit;
+    border: 1px solid currentColor;
+    padding: 8px 12px;
+    font-family: inherit;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  h1, p {
+    transition: color 0.3s, text-shadow 0.3s;
+    background: transparent;
+  }
+  
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: transparent;
+  }
+  
